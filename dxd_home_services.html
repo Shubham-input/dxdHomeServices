@@ -1,0 +1,1493 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DXD Home Services – Appliance Repair & Maintenance | DFW</title>
+    <meta
+      name="description"
+      content="Family-owned appliance repair and maintenance in DFW. Same-day/next-day service. No service fee with completed repair."
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "sans-serif"] },
+            colors: {
+              brandBlue: "#0F2060" /* Navy primary */,
+              brandLightBlue: "#1A3580" /* Navy secondary */,
+              brandGreen: "#E07020" /* Accent Orange */,
+              brandBg: "#F4F7FF" /* Light blue bg */,
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .bg-pattern {
+        background-color: #f4f7ff;
+        background-image: radial-gradient(#d8e4f5 1px, transparent 1px);
+        background-size: 40px 40px;
+      }
+      .text-outline {
+        -webkit-text-stroke: 1px #e07020;
+        color: transparent;
+      }
+      .vertical-text {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .animate-marquee {
+        animation: marquee 35s linear infinite;
+        width: max-content;
+      }
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800 antialiased overflow-x-hidden">
+    <!-- Floating Badges -->
+    <div
+      class="fixed right-0 top-1/2 -translate-y-1/2 bg-brandGreen text-white font-bold py-4 px-2 rounded-l-xl shadow-lg z-50 cursor-pointer hover:scale-105 transition-transform origin-right"
+    >
+      <span class="vertical-text tracking-widest text-sm">Book Same Day</span>
+    </div>
+    <div
+      class="fixed bottom-6 left-6 bg-white p-4 rounded-xl shadow-2xl z-50 flex flex-col items-center border border-gray-100 transition-transform hover:-translate-y-1"
+    >
+      <img src="images/logo.png" alt="Google" class="w-6 h-6 mb-1" />
+      <div class="flex items-center gap-1 font-bold text-xl">
+        5.0
+        <div class="flex text-yellow-400 text-sm">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+      <div class="text-xs text-gray-500 font-semibold">Family Owned</div>
+    </div>
+
+    <!-- Top Bar -->
+    <div
+      class="bg-brandBlue text-white text-sm py-2 flex justify-center gap-8 items-center border-b border-blue-900"
+    >
+      <a
+        href="#"
+        class="flex items-center gap-2 hover:text-brandGreen transition"
+        ><i class="fa-solid fa-check-circle"></i> 90-Day Labor Warranty</a
+      >
+      <a
+        href="#"
+        class="flex items-center gap-2 hover:text-brandGreen transition"
+        ><i class="fa-solid fa-tags"></i> No Service Fee with Repair</a
+      >
+    </div>
+
+    <!-- Navigation -->
+    <header
+      class="bg-white sticky top-0 z-40 shadow-sm border-b border-gray-100"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img
+            src="https://dxdhomeservices.manus.space/manus-storage/dxd-logo_8a4c940e.png"
+            alt="DXD Home Services"
+            class="h-10 object-contain"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div
+            class="hidden items-center gap-2 text-brandBlue font-black text-2xl tracking-tighter"
+            style="display: none"
+          >
+            <div class="bg-brandBlue text-brandGreen px-2 py-1 rounded">
+              DXD
+            </div>
+            <div class="leading-none">
+              HOME<br /><span
+                class="text-sm tracking-widest text-gray-500 font-semibold"
+                >SERVICES</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Links -->
+        <nav class="hidden lg:flex gap-6 text-sm font-semibold text-gray-800">
+          <a href="#services" class="hover:text-brandLightBlue"
+            >Services <i class="fa-solid fa-caret-down text-xs"></i
+          ></a>
+          <a href="#process" class="hover:text-brandLightBlue">How It Works</a>
+          <a href="#about" class="hover:text-brandLightBlue"
+            >About Us <i class="fa-solid fa-caret-down text-xs"></i
+          ></a>
+          <a href="#testimonials" class="hover:text-brandLightBlue"
+            >Testimonials</a
+          >
+          <a href="#faq" class="hover:text-brandLightBlue">FAQ</a>
+        </nav>
+        <!-- CTA -->
+        <div class="flex items-center gap-6">
+          <a
+            href="tel:6824881251"
+            class="font-bold text-brandBlue flex items-center gap-2 hidden md:flex"
+            ><i class="fa-solid fa-phone"></i> (682) 488-1251</a
+          >
+          <a
+            href="#contact"
+            class="bg-brandGreen text-white font-bold py-3 px-6 rounded-full hover:bg-opacity-90 transition"
+            >Book Repair</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-pattern pt-20 pb-24 relative">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <p class="text-gray-500 font-semibold flex items-center gap-2 mb-4">
+            <i class="fa-solid fa-wrench text-brandLightBlue"></i> Appliance
+            Repair in DFW — Same Day / Next Day
+          </p>
+          <h1
+            class="text-6xl md:text-8xl font-black text-gray-900 leading-[0.9] mb-4 tracking-tight"
+          >
+            DFW'S<br />TRUSTED<br />
+            <span class="text-brandLightBlue">APPLIANCE<br />REPAIR</span>
+          </h1>
+          <p
+            class="text-gray-600 mb-8 font-medium text-lg leading-relaxed max-w-lg"
+          >
+            Family owned & operated with 14+ years of hands-on experience. Speak
+            directly with our certified technicians today — no call centers, no
+            subcontractors.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#contact"
+              class="bg-brandGreen text-white font-bold py-4 px-8 rounded-full hover:bg-opacity-90 transition shadow-lg"
+              >Request Appointment</a
+            >
+            <a
+              href="tel:6824881251"
+              class="bg-white text-brandBlue font-bold py-4 px-8 rounded-full hover:bg-gray-50 transition border border-gray-200"
+              >Call (682) 488-1251</a
+            >
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="https://dxdhomeservices.manus.space/manus-storage/hero-technician_ace16287.png"
+            alt="Appliance Repair Technician"
+            class="rounded-3xl shadow-2xl w-full object-cover h-[450px]"
+            onerror="
+              this.src =
+                'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80'
+            "
+          />
+          <!-- Floating Quote Box -->
+          <div
+            id="hero-popup"
+            class="absolute top-1/2 right-0 translate-x-4 -translate-y-1/2 bg-brandBlue text-white p-6 rounded-lg shadow-xl text-center transition-opacity duration-300"
+          >
+            <button
+              id="close-popup"
+              class="absolute top-2 right-2 text-white/50 hover:text-white transition"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <p class="font-bold text-xl mb-1">Need it fixed today?</p>
+            <p class="text-sm text-gray-300">We'll call you within 30 mins!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands Carousel Section -->
+    <section
+      class="py-10 bg-white border-b border-gray-100 overflow-hidden flex flex-col items-center"
+    >
+      <p
+        class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-8 text-center w-full"
+      >
+        Major Brands We Service
+      </p>
+
+      <div
+        class="relative w-full overflow-hidden flex"
+        style="
+          mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent
+          );
+          -webkit-mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent
+          );
+        "
+      >
+        <div
+          class="animate-marquee flex items-center gap-16 pr-16 opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-default"
+        >
+          <!-- Set 1 -->
+          <img
+            src="images/Whirlpool_Brand_2C_Black_Web.svg"
+            alt="Whirlpool"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/GE_Appliances_logo.svg"
+            alt="GE Appliances"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Samsung_wordmark.svg"
+            alt="Samsung"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/LG_logo_(2014).svg"
+            alt="LG"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Bosch-logo.svg"
+            alt="Bosch"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Sub-Zero_(logo).svg"
+            alt="Sub-Zero"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Logo_of_Maytag_(1963-2008).svg"
+            alt="Maytag"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Kitchenaid_logo.svg"
+            alt="KitchenAid"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/viking_appliances.ai"
+            alt="Viking"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Frigidaire.svg"
+            alt="Frigidaire"
+            class="h-8 md:h-10 object-contain"
+          />
+
+          <!-- Set 2 (Exact Duplicate) -->
+          <img
+            src="images/Whirlpool_Brand_2C_Black_Web.svg"
+            alt="Whirlpool"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/GE_Appliances_logo.svg"
+            alt="GE Appliances"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Samsung_wordmark.svg"
+            alt="Samsung"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/LG_logo_(2014).svg"
+            alt="LG"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Bosch-logo.svg"
+            alt="Bosch"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Sub-Zero_(logo).svg"
+            alt="Sub-Zero"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Logo_of_Maytag_(1963-2008).svg"
+            alt="Maytag"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Kitchenaid_logo.svg"
+            alt="KitchenAid"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/viking_appliances.ai"
+            alt="Viking"
+            class="h-8 md:h-10 object-contain"
+          />
+          <img
+            src="images/Frigidaire.svg"
+            alt="Frigidaire"
+            class="h-8 md:h-10 object-contain"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 items-end">
+          <div>
+            <p
+              class="text-sm font-bold text-gray-500 tracking-widest border-l-2 border-brandLightBlue pl-4 mb-4 uppercase"
+            >
+              Our Expertise
+            </p>
+            <h2
+              class="text-5xl font-black text-gray-900 leading-tight uppercase"
+            >
+              Comprehensive<br /><span class="text-brandLightBlue"
+                >Appliance Services</span
+              >
+            </h2>
+          </div>
+          <p class="text-gray-600 text-lg">
+            Whether your refrigerator stopped cooling or your washer won't spin,
+            our certified technicians are equipped to handle it. We service all
+            major brands with OEM quality parts, ensuring your household runs
+            smoothly again in no time.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-3xl mb-6">
+              <img
+                src="images/Refrigerator-Repair-260451481-Able-Appliance.webp"
+                alt="Refrigerator"
+                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Refrigerator Repair</h3>
+            <p
+              class="text-xs font-bold text-brandGreen uppercase tracking-wide mb-3"
+            >
+              Cooling Systems • Ice Makers • Compressors
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Not cooling, ice maker issues, water leaks, compressor problems —
+              we diagnose and fix all refrigerator brands.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-3xl mb-6">
+              <img
+                src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80"
+                alt="Washer and Dryer"
+                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Washer & Dryer</h3>
+            <p
+              class="text-xs font-bold text-brandGreen uppercase tracking-wide mb-3"
+            >
+              Front-Load • Top-Load • Gas & Electric
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Drum not spinning, won't drain, excessive vibration, heating
+              element failures — all washer and dryer models.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-3xl mb-6">
+              <img
+                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80"
+                alt="Oven and Range"
+                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Oven & Range</h3>
+            <p
+              class="text-xs font-bold text-brandGreen uppercase tracking-wide mb-3"
+            >
+              Gas Ranges • Electric Ovens • Convection
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Burners not igniting, uneven heating, broken door hinges, faulty
+              thermostats — gas and electric ranges.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-3xl mb-6">
+              <img
+                src="images/dishwasher-repair.jpg"
+                alt="Dishwasher"
+                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Dishwasher Repair</h3>
+            <p
+              class="text-xs font-bold text-brandGreen uppercase tracking-wide mb-3"
+            >
+              Drainage • Spray Arms • Control Boards
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Not cleaning properly, leaking, won't drain, control board issues
+              — all dishwasher brands and models.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-3xl mb-6">
+              <img
+                src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?auto=format&fit=crop&w=800&q=80"
+                alt="Microwave"
+                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h3 class="text-2xl font-bold mb-2">
+              Microwave & Garbage Disposal
+            </h3>
+            <p
+              class="text-xs font-bold text-brandGreen uppercase tracking-wide mb-3"
+            >
+              Built-In • Over-Range • Disposals
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Microwave not heating, door latch issues, sparking, plus garbage
+              disposal jams, leaks, and motor failures.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-3xl mb-6">
+              <img
+                src="images/Range-Hood-Repair_Hillside-2.jpg"
+                alt="Range Hood"
+                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h3 class="text-2xl font-bold mb-2">
+              Ventilation & Range Hood Service
+            </h3>
+            <p
+              class="text-xs font-bold text-brandGreen uppercase tracking-wide mb-3"
+            >
+              Range Hoods • Exhaust Fans • Filters
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Range hood repair, downdraft systems, and kitchen ventilation
+              service to keep airflow working properly.
+            </p>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-3xl mb-6">
+              <img
+                src="images/Ice-Maker-Appliance-Repair-Hillside.png"
+                alt="Ice Maker"
+                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Under-Counter Ice Maker</h3>
+            <p
+              class="text-xs font-bold text-brandGreen uppercase tracking-wide mb-3"
+            >
+              Not Making Ice • Cleanings • Leaks
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Not making ice, slow production, leaks, and full cleanings for
+              under-counter and built-in ice maker units.
+            </p>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-3xl mb-6">
+              <img
+                src="images/iStock-1435449607_feat.jpg"
+                alt="Preventative Maintenance"
+                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Preventive Maintenance</h3>
+            <p
+              class="text-xs font-bold text-brandGreen uppercase tracking-wide mb-3"
+            >
+              Annual Plans • Cleaning • Inspections
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Annual tune-ups, cleaning, and inspections to extend appliance
+              life and prevent costly breakdowns.
+            </p>
+          </div>
+
+          <!-- Card 9 (Catch-All CTA) -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-3xl mb-6">
+              <img
+                src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80"
+                alt="Contact for other appliances"
+                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Don't see your appliance?</h3>
+            <p
+              class="text-xs font-bold text-brandGreen uppercase tracking-wide mb-3"
+            >
+              Call Or Text • We likely service it
+            </p>
+            <div class="flex gap-3 mt-4">
+              <a
+                href="tel:6824881251"
+                class="flex-1 bg-brandBlue text-white font-bold py-3 px-4 rounded-full hover:bg-opacity-90 transition flex justify-center items-center gap-2 text-sm shadow-md"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </a>
+              <a
+                href="sms:6824881251"
+                class="flex-1 bg-brandGreen text-white font-bold py-3 px-4 rounded-full hover:opacity-90 transition flex justify-center items-center gap-2 text-sm shadow-md"
+              >
+                <i class="fa-solid fa-comment"></i> Text
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process / "Quality in Action" Section -->
+    <section id="process" class="py-24 bg-pattern">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+      >
+        <div class="lg:col-span-5">
+          <p
+            class="text-sm font-bold text-gray-500 tracking-widest border-l-2 border-brandLightBlue pl-4 mb-4 uppercase"
+          >
+            Process
+          </p>
+          <h2
+            class="text-5xl font-black text-gray-900 leading-tight uppercase mb-6"
+          >
+            Our Simple<br /><span class="text-brandLightBlue"
+              >4-Step Process</span
+            >
+          </h2>
+
+          <div class="space-y-6 mb-8">
+            <div class="flex gap-4">
+              <div
+                class="w-8 h-8 rounded-full bg-brandLightBlue text-white flex items-center justify-center font-bold shrink-0 text-sm"
+              >
+                1
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 text-lg leading-none mb-1">
+                  Call or Text to Schedule
+                </h4>
+                <p class="text-sm text-gray-600">
+                  Speak directly with the owners. Often available for same-day
+                  or next-day service.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="w-8 h-8 rounded-full bg-brandLightBlue text-white flex items-center justify-center font-bold shrink-0 text-sm"
+              >
+                2
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 text-lg leading-none mb-1">
+                  We Come to You
+                </h4>
+                <p class="text-sm text-gray-600">
+                  An experienced, certified technician (14+ yrs) arrives
+                  respectfully at your home.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="w-8 h-8 rounded-full bg-brandLightBlue text-white flex items-center justify-center font-bold shrink-0 text-sm"
+              >
+                3
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 text-lg leading-none mb-1">
+                  Diagnosis & Upfront Quote
+                </h4>
+                <p class="text-sm text-gray-600">
+                  Issue is diagnosed and explained. You get a straightforward
+                  quote before any work begins.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="w-8 h-8 rounded-full bg-brandLightBlue text-white flex items-center justify-center font-bold shrink-0 text-sm"
+              >
+                4
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 text-lg leading-none mb-1">
+                  Repair & Warranty
+                </h4>
+                <p class="text-sm text-gray-600">
+                  Repair completed with care and backed by a 90-day parts and
+                  labor warranty.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="#contact"
+            class="bg-white text-brandBlue font-bold py-4 px-8 rounded-full border shadow-sm hover:shadow-md transition inline-block"
+            >Book Your Repair</a
+          >
+        </div>
+
+        <div class="lg:col-span-7 relative">
+          <!-- Reactive Image Slider -->
+          <div
+            class="overflow-hidden rounded-3xl shadow-2xl relative h-[450px]"
+          >
+            <div
+              id="process-slider"
+              class="flex transition-transform duration-500 h-full w-full"
+            >
+              <img
+                src="images/variety-of-range-and-oven-parts-for-diy-repairs-highlighting-quality-and-functionality-240bb53f-4a8d-4ae6-8b2b-35ef62b52be9.jpg"
+                class="min-w-full h-full object-cover shrink-0"
+                alt="Appliance Repair Workshop"
+              />
+              <img
+                src="images/Repair-Man-Fixing-Washing-Machine.jpg"
+                class="min-w-full h-full object-cover shrink-0"
+                alt="Technician Fixing Equipment"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+                class="min-w-full h-full object-cover shrink-0"
+                alt="OEM Parts"
+              />
+            </div>
+          </div>
+          <button
+            id="process-prev"
+            class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/60 transition"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button
+            id="process-next"
+            class="absolute right-4 top-1/2 -translate-y-1/2 bg-brandBlue text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-900 transition"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <div
+            id="process-caption"
+            class="mt-6 text-center font-bold text-xl text-brandBlue"
+          >
+            Quality Parts. Reliable Repairs.
+          </div>
+        </div>
+      </div>
+
+      <!-- Brands Bar -->
+      <div
+        class="max-w-7xl mx-auto px-6 mt-16 flex flex-wrap justify-center md:justify-between items-center gap-6 opacity-60"
+      >
+        <h3
+          class="w-full text-center text-xs font-bold uppercase tracking-widest text-gray-500 mb-2"
+        >
+          Major Brands We Service
+        </h3>
+        <img
+          src="images/Whirlpool_Brand_2C_Black_Web.svg"
+          alt="Whirlpool"
+          class="h-8 md:h-10 object-contain"
+        />
+        <img
+          src="images/GE_Appliances_logo.svg"
+          alt="GE Appliances"
+          class="h-8 md:h-10 object-contain"
+        />
+        <img
+          src="images/Samsung_wordmark.svg"
+          alt="Samsung"
+          class="h-8 md:h-10 object-contain"
+        />
+        <img
+          src="images/LG_logo_(2014).svg"
+          alt="LG"
+          class="h-8 md:h-10 object-contain"
+        />
+        <img
+          src="images/Bosch-logo.svg"
+          alt="Bosch"
+          class="h-8 md:h-10 object-contain"
+        />
+        <img
+          src="images/Sub-Zero_(logo).svg"
+          alt="Sub-Zero"
+          class="h-8 md:h-10 object-contain"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-pattern">
+      <div
+        class="max-w-7xl mx-auto px-6 mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <p
+            class="text-sm font-bold text-gray-500 tracking-widest border-l-2 border-brandLightBlue pl-4 mb-4 uppercase"
+          >
+            Why Choose Us
+          </p>
+          <h2
+            class="text-5xl font-black text-gray-900 leading-tight uppercase mb-6"
+          >
+            Family Owned<br /><span class="text-brandLightBlue"
+              >& Operated</span
+            >
+          </h2>
+          <p class="text-gray-600 text-lg mb-8">
+            When you call DXD Home Services, you aren't routed to a massive call
+            center. You speak directly with the owners. We treat your home with
+            the utmost respect, using protective measures and ensuring a
+            thorough cleanup after every job.
+          </p>
+          <a
+            href="#contact"
+            class="bg-white text-brandBlue font-bold py-4 px-8 rounded-full border shadow-sm hover:shadow-md transition inline-block"
+            >Work With Us</a
+          >
+        </div>
+
+        <div
+          class="relative flex items-center justify-center lg:justify-end w-full"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80"
+            alt="Trusted Professional Technician"
+            class="rounded-3xl shadow-2xl w-full max-w-md object-cover h-[400px] border-4 border-white"
+          />
+          <!-- Optional Floating Trust Badge to keep the 100% stat -->
+          <div
+            class="absolute -bottom-6 right-4 md:right-8 bg-brandGreen text-white p-6 rounded-2xl shadow-lg border-4 border-white transform hover:scale-105 transition-transform duration-300"
+          >
+            <p class="text-4xl font-black mb-1 leading-none">100%</p>
+            <p class="text-xs font-bold uppercase tracking-wide leading-tight">
+              Commitment<br />to Quality
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12"
+      >
+        <div>
+          <div class="flex items-center gap-4 mb-4">
+            <div
+              class="bg-brandGreen w-14 h-14 rounded-2xl flex items-center justify-center text-white text-2xl shadow-sm"
+            >
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3 class="text-2xl font-bold">Same-Day Service</h3>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            We know appliance breakdowns are an emergency. That's why we offer
+            same-day or next-day appointments in most cases to get your life
+            back on track fast.
+          </p>
+        </div>
+        <div>
+          <div class="flex items-center gap-4 mb-4">
+            <div
+              class="bg-brandGreen w-14 h-14 rounded-2xl flex items-center justify-center text-white text-2xl shadow-sm"
+            >
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+            </div>
+            <h3 class="text-2xl font-bold">Transparent Pricing</h3>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            No hidden fees, no surprises. We waive the service fee entirely when
+            you proceed with the completed repair. You approve the quote before
+            we touch a tool.
+          </p>
+        </div>
+        <div>
+          <div class="flex items-center gap-4 mb-4">
+            <div
+              class="bg-brandGreen w-14 h-14 rounded-2xl flex items-center justify-center text-white text-2xl shadow-sm"
+            >
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="text-2xl font-bold">OEM Quality Parts</h3>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            We don't cut corners. We use Original Equipment Manufacturer (OEM)
+            parts backed by manufacturer warranties, plus our own 90-day labor
+            guarantee.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map & Service Area Section -->
+    <section class="py-24 bg-white">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+      >
+        <div>
+          <div
+            class="bg-gray-200 w-full h-[500px] rounded-3xl overflow-hidden relative border border-gray-300 shadow-inner"
+          >
+            <!-- Embedded Google Map centered on DFW area -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1700207.3941490226!2d-98.34444583196924!3d32.82058509743818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e6e122ce807ad%3A0x862700ceeb14e048!2sDallas-Fort%20Worth%20Metroplex%2C%20TX!5e0!3m2!1sen!2sus!4v1701198544021!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div>
+          <p
+            class="text-sm font-bold text-gray-500 tracking-widest border-l-2 border-brandLightBlue pl-4 mb-4 uppercase"
+          >
+            Service Area
+          </p>
+          <h2
+            class="text-5xl font-black text-gray-900 leading-tight uppercase mb-6"
+          >
+            Serving the <span class="text-brandLightBlue">DFW Metroplex</span>
+          </h2>
+          <p class="text-gray-600 text-lg mb-8">
+            Based in the heart of Texas, we are proud to provide fast, reliable
+            appliance repair services to our neighbors. Whether you're dealing
+            with a broken fridge in Fort Worth or a faulty dryer in Arlington,
+            our team is ready to deploy.
+          </p>
+
+          <p class="font-bold text-lg mb-4 text-brandBlue">
+            Primary Service Areas:
+          </p>
+          <div
+            class="grid grid-cols-2 gap-4 text-brandBlue font-bold text-xl mb-6"
+          >
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-location-dot text-brandGreen"></i>
+              <span class="underline decoration-gray-300 underline-offset-4"
+                >Fort Worth</span
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-location-dot text-brandGreen"></i>
+              <span class="underline decoration-gray-300 underline-offset-4"
+                >Arlington</span
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-location-dot text-brandGreen"></i>
+              <span class="underline decoration-gray-300 underline-offset-4"
+                >Grand Prairie</span
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-location-dot text-brandGreen"></i>
+              <span class="underline decoration-gray-300 underline-offset-4"
+                >Mansfield</span
+              >
+            </div>
+          </div>
+
+          <p class="text-sm text-gray-500 italic mb-8">
+            ...and surrounding DFW neighborhoods.
+          </p>
+
+          <a
+            href="tel:6824881251"
+            class="bg-gray-100 text-brandBlue font-bold py-4 px-8 rounded-full border shadow-sm hover:bg-gray-200 transition inline-block"
+            >Call to Check Your Area</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-brandLightBlue py-24 text-center">
+      <div class="max-w-7xl mx-auto px-6 relative">
+        <p
+          class="text-sm font-bold text-white/80 tracking-widest border-l-2 border-brandGreen pl-4 mb-4 uppercase inline-block"
+        >
+          Testimonials
+        </p>
+        <h2
+          class="text-5xl font-black text-white leading-tight uppercase mb-12"
+        >
+          Quality That Speaks Volumes
+        </h2>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left relative z-10"
+        >
+          <!-- Review 1 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-xl flex flex-col justify-between hover:-translate-y-1 transition duration-300"
+          >
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-12 h-12 bg-gray-800 text-white rounded-full flex items-center justify-center font-bold text-xl"
+                >
+                  D
+                </div>
+                <div>
+                  <p class="font-bold text-gray-900 flex items-center gap-1">
+                    DFW Resident
+                    <i
+                      class="fa-solid fa-circle-check text-blue-500 text-xs"
+                    ></i>
+                  </p>
+                  <p class="text-xs text-gray-500">Verified Customer</p>
+                </div>
+              </div>
+              <div class="flex text-yellow-400 text-sm mb-4">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-gray-600 text-sm">
+                "My refrigerator stopped cooling right before the weekend. DXD
+                came out the same day, diagnosed the compressor issue, and
+                explained the pricing upfront. Highly recommend!"
+              </p>
+            </div>
+          </div>
+
+          <!-- Review 2 (CTA to review) -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-xl flex flex-col justify-between transform md:-translate-y-4 border-t-4 border-brandGreen text-center"
+          >
+            <div>
+              <div
+                class="w-16 h-16 bg-blue-50 text-brandGreen rounded-full flex items-center justify-center font-bold text-3xl mx-auto mb-4 border border-blue-100"
+              >
+                <i class="fa-solid fa-comment-dots"></i>
+              </div>
+              <h4
+                class="text-2xl font-black text-brandBlue uppercase tracking-tight mb-2"
+              >
+                Be Our First Reviewer!
+              </h4>
+              <p class="text-gray-600 text-sm mb-6">
+                We are a new, family-owned business working hard to build trust
+                in the DFW area. Experience our top-tier service today.
+              </p>
+            </div>
+            <a
+              href="https://facebook.com/profile.php?id=61560630308578"
+              target="_blank"
+              class="text-brandBlue font-bold text-sm uppercase hover:text-brandGreen transition"
+              >Leave a Review <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Review 3 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-xl flex flex-col justify-between hover:-translate-y-1 transition duration-300"
+          >
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-12 h-12 bg-gray-800 text-white rounded-full flex items-center justify-center font-bold text-xl relative"
+                >
+                  R
+                  <div
+                    class="absolute -bottom-1 -right-1 bg-brandGreen text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full"
+                  >
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-900 flex items-center gap-1">
+                    DFW Resident
+                    <i
+                      class="fa-solid fa-circle-check text-blue-500 text-xs"
+                    ></i>
+                  </p>
+                  <p class="text-xs text-gray-500">Verified Customer</p>
+                </div>
+              </div>
+              <div class="flex text-yellow-400 text-sm mb-4">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-gray-600 text-sm">
+                "The technician was extremely polite, wore shoe covers, and
+                cleaned up the entire work area after fixing our oven. It's rare
+                to see that level of care these days."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white relative">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"
+      >
+        <div>
+          <p
+            class="text-sm font-bold text-gray-500 tracking-widest border-l-2 border-brandLightBlue pl-4 mb-4 uppercase"
+          >
+            Contact Us
+          </p>
+          <h2
+            class="text-5xl font-black text-gray-900 leading-tight uppercase mb-6"
+          >
+            Schedule Service in<br /><span class="text-brandLightBlue"
+              >Minutes</span
+            >
+          </h2>
+          <p class="text-gray-600 mb-8">
+            Fill out the form to request an appointment. A member of our family
+            will call you back within 30 minutes to confirm your time and
+            discuss the issue. No obligation.
+          </p>
+
+          <div class="space-y-4 mb-8">
+            <div
+              class="flex items-center gap-4 bg-gray-50 p-4 rounded-xl shadow-sm border border-gray-100"
+            >
+              <div
+                class="w-12 h-12 bg-white text-brandBlue rounded-full flex items-center justify-center text-xl shadow-sm"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p
+                  class="text-xs text-gray-500 font-bold uppercase tracking-widest"
+                >
+                  Call or Text
+                </p>
+                <a
+                  href="tel:6824881251"
+                  class="font-bold text-xl text-gray-900 hover:text-brandGreen transition"
+                  >(682) 488-1251</a
+                >
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-4 bg-gray-50 p-4 rounded-xl shadow-sm border border-gray-100"
+            >
+              <div
+                class="w-12 h-12 bg-white text-brandBlue rounded-full flex items-center justify-center text-xl shadow-sm"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <p
+                  class="text-xs text-gray-500 font-bold uppercase tracking-widest"
+                >
+                  Email Us
+                </p>
+                <a
+                  href="mailto:dxdhomepros@gmail.com"
+                  class="font-bold text-lg text-gray-900 hover:text-brandGreen transition"
+                  >dxdhomepros@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-gray-50 p-10 rounded-3xl shadow-xl border border-gray-100"
+        >
+          <form id="contact-form" class="space-y-6">
+            <div>
+              <input
+                type="text"
+                placeholder="Full Name *"
+                required
+                class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-brandLightBlue focus:ring-1 focus:ring-brandLightBlue"
+              />
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <input
+                type="tel"
+                placeholder="Phone Number *"
+                required
+                class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-brandLightBlue focus:ring-1 focus:ring-brandLightBlue"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-brandLightBlue focus:ring-1 focus:ring-brandLightBlue"
+              />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <select
+                required
+                class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-brandLightBlue focus:ring-1 focus:ring-brandLightBlue text-gray-600 bg-white"
+              >
+                <option value="" disabled selected>Appliance Type *</option>
+                <option value="refrigerator">Refrigerator / Freezer</option>
+                <option value="washer">Washer</option>
+                <option value="dryer">Dryer</option>
+                <option value="oven">Oven / Range</option>
+                <option value="dishwasher">Dishwasher</option>
+                <option value="microwave">Microwave</option>
+                <option value="other">Other / Not Listed</option>
+              </select>
+              <select
+                class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-brandLightBlue focus:ring-1 focus:ring-brandLightBlue text-gray-600 bg-white"
+              >
+                <option value="" disabled selected>Preferred Time</option>
+                <option value="morning">Morning (8am - 12pm)</option>
+                <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                <option value="any">Any Time</option>
+              </select>
+            </div>
+
+            <textarea
+              placeholder="Describe the issue (e.g., Fridge isn't cooling...)"
+              rows="4"
+              class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-brandLightBlue focus:ring-1 focus:ring-brandLightBlue"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="w-full bg-brandGreen text-white font-bold py-4 rounded-xl hover:bg-opacity-90 transition text-lg shadow-md"
+            >
+              Request Appointment
+            </button>
+
+            <div class="text-center">
+              <p class="text-sm text-gray-500 font-medium">
+                We'll call you within 30 minutes • No obligation
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 pt-20 pb-10 border-t border-gray-200">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
+      >
+        <!-- Col 1 -->
+        <div class="lg:col-span-1">
+          <div
+            class="flex items-center gap-2 text-brandBlue font-black text-xl mb-6 tracking-tighter"
+          >
+            <img
+              src="https://dxdhomeservices.manus.space/manus-storage/dxd-logo_8a4c940e.png"
+              alt="DXD Logo"
+              class="h-8"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <div
+              class="hidden leading-none items-center gap-2"
+              style="display: none"
+            >
+              <div
+                class="bg-brandBlue text-brandGreen px-1.5 py-0.5 rounded text-sm"
+              >
+                DXD
+              </div>
+              <div>
+                HOME<br /><span
+                  class="text-[10px] tracking-widest text-gray-500 font-semibold"
+                  >SERVICES</span
+                >
+              </div>
+            </div>
+          </div>
+          <p class="font-bold text-gray-900 mb-1">DXD Home Services</p>
+          <p class="text-sm text-gray-600 mb-4 pr-4">
+            Family-owned appliance repair and maintenance serving the DFW
+            Metroplex.
+          </p>
+          <a
+            href="tel:6824881251"
+            class="font-bold text-brandBlue text-lg flex items-center gap-2 hover:text-brandGreen transition"
+            ><i class="fa-solid fa-phone"></i> (682) 488-1251</a
+          >
+        </div>
+
+        <!-- Col 2 -->
+        <div class="lg:col-span-1 pt-2 lg:pt-12">
+          <p
+            class="font-bold text-brandLightBlue mb-3 uppercase tracking-wide text-sm"
+          >
+            Contact Us
+          </p>
+          <p class="text-sm text-gray-600 mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-comment text-brandGreen"></i> Text messages
+            accepted
+          </p>
+          <p class="text-sm text-gray-600 mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-envelope text-brandGreen"></i>
+            <a
+              href="mailto:dxdhomepros@gmail.com"
+              class="text-brandLightBlue hover:underline"
+              >dxdhomepros@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="lg:col-span-1 pt-2 lg:pt-12">
+          <p
+            class="font-bold text-gray-900 mb-3 uppercase tracking-wide text-sm"
+          >
+            Business Hours
+          </p>
+          <p class="text-sm text-gray-600 mb-1 flex justify-between">
+            <span>Mon-Fri:</span>
+            <span class="font-bold">8:00 AM - 5:00 PM</span>
+          </p>
+          <p class="text-sm text-gray-600 mb-1 flex justify-between">
+            <span>Saturday:</span>
+            <span class="font-bold">8:00 AM - 12:00 PM</span>
+          </p>
+          <p class="text-sm text-gray-600 mb-3 flex justify-between">
+            <span>Sunday:</span> <span class="font-bold">Closed</span>
+          </p>
+          <p class="text-xs text-brandGreen font-bold italic">
+            * Emergency repairs available, call directly.
+          </p>
+        </div>
+
+        <!-- Col 4 (Socials & Links) -->
+        <div class="lg:col-span-1 flex flex-col lg:items-end pt-2 lg:pt-12">
+          <div class="flex gap-2 mb-8">
+            <a
+              href="https://facebook.com/profile.php?id=61560630308578"
+              target="_blank"
+              class="w-10 h-10 bg-brandGreen text-white flex items-center justify-center rounded hover:opacity-80 transition"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="w-10 h-10 bg-brandGreen text-white flex items-center justify-center rounded hover:opacity-80 transition"
+              ><i class="fa-brands fa-google"></i
+            ></a>
+          </div>
+          <div
+            class="flex flex-col gap-3 lg:text-right text-sm font-semibold text-gray-700 w-full"
+          >
+            <a
+              href="#services"
+              class="border-l-2 lg:border-l-0 lg:border-r-2 border-brandLightBlue pl-2 lg:pl-0 lg:pr-2 hover:text-brandLightBlue"
+              >Our Services</a
+            >
+            <a
+              href="#process"
+              class="border-l-2 lg:border-l-0 lg:border-r-2 border-brandLightBlue pl-2 lg:pl-0 lg:pr-2 hover:text-brandLightBlue"
+              >How It Works</a
+            >
+            <a
+              href="#about"
+              class="border-l-2 lg:border-l-0 lg:border-r-2 border-brandLightBlue pl-2 lg:pl-0 lg:pr-2 hover:text-brandLightBlue"
+              >About Us</a
+            >
+            <a
+              href="#contact"
+              class="border-l-2 lg:border-l-0 lg:border-r-2 border-brandLightBlue pl-2 lg:pl-0 lg:pr-2 hover:text-brandLightBlue"
+              >Request Appointment</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-6 mb-8 flex flex-wrap gap-4 items-center opacity-70"
+      >
+        <!-- Real coded badges instead of image placeholders -->
+        <div
+          class="flex items-center gap-2 border border-gray-300 px-3 py-1.5 bg-white rounded shadow-sm"
+        >
+          <i class="fa-solid fa-certificate text-brandLightBlue"></i>
+          <span class="text-xs font-bold uppercase tracking-wider text-gray-700"
+            >Licensed</span
+          >
+        </div>
+        <div
+          class="flex items-center gap-2 border border-gray-300 px-3 py-1.5 bg-white rounded shadow-sm"
+        >
+          <i class="fa-solid fa-shield-halved text-brandLightBlue"></i>
+          <span class="text-xs font-bold uppercase tracking-wider text-gray-700"
+            >Insured</span
+          >
+        </div>
+        <span
+          class="text-brandLightBlue font-bold text-sm ml-4 border-l pl-4 border-gray-300"
+          >Serving DFW</span
+        >
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-6 border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4"
+      >
+        <p>© 2026 DXD Home Services. All Rights Reserved.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-brandLightBlue underline"
+            >Privacy Policy</a
+          >
+          <a href="#" class="hover:text-brandLightBlue underline"
+            >Terms of Service</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // 1. Dismiss Hero Popup
+        const closePopupBtn = document.getElementById("close-popup");
+        const heroPopup = document.getElementById("hero-popup");
+        if (closePopupBtn && heroPopup) {
+          closePopupBtn.addEventListener("click", () => {
+            heroPopup.style.opacity = "0";
+            setTimeout(() => (heroPopup.style.display = "none"), 300);
+          });
+        }
+
+        // 2. Process / Quality Slider
+        const processSlider = document.getElementById("process-slider");
+        const processPrev = document.getElementById("process-prev");
+        const processNext = document.getElementById("process-next");
+        let currentSlide = 0;
+        const totalSlides = 3;
+
+        if (processSlider && processPrev && processNext) {
+          processNext.addEventListener("click", () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            processSlider.style.transform = `translateX(-${currentSlide * 100}%)`;
+          });
+          processPrev.addEventListener("click", () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            processSlider.style.transform = `translateX(-${currentSlide * 100}%)`;
+          });
+        }
+
+        // 3. Team Slider (Horizontal Scroll)
+        const teamSlider = document.getElementById("team-slider");
+        const teamPrev = document.getElementById("team-prev");
+        const teamNext = document.getElementById("team-next");
+
+        if (teamSlider && teamPrev && teamNext) {
+          teamNext.addEventListener("click", () => {
+            teamSlider.scrollBy({ left: 200, behavior: "smooth" });
+          });
+          teamPrev.addEventListener("click", () => {
+            teamSlider.scrollBy({ left: -200, behavior: "smooth" });
+          });
+        }
+
+        // 4. Form Submission Handling
+        const contactForm = document.getElementById("contact-form");
+        if (contactForm) {
+          contactForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const submitBtn = contactForm.querySelector(
+              'button[type="submit"]',
+            );
+            const originalText = submitBtn.innerText;
+
+            // Visual feedback
+            submitBtn.innerText = "Request Sent Successfully!";
+            submitBtn.classList.remove("bg-brandGreen");
+            submitBtn.classList.add("bg-green-600");
+
+            // Reset after 3 seconds
+            setTimeout(() => {
+              submitBtn.innerText = originalText;
+              submitBtn.classList.remove("bg-green-600");
+              submitBtn.classList.add("bg-brandGreen");
+              contactForm.reset();
+            }, 3000);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
